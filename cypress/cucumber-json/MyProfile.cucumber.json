@@ -1,0 +1,419 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Validation of My Profile features of wordpress",
+    "line": 1,
+    "id": "validation-of-my-profile-features-of-wordpress",
+    "tags": [],
+    "uri": "MyProfile.feature",
+    "elements": [
+      {
+        "id": "validation-of-my-profile-features-of-wordpress;verify-if-the-user-is-able-to-access-myprofile-page-successfully-with-valid-credentails",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Verify if the user is able to access MyProfile page successfully with Valid credentails",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User login to the application in 'prod' env",
+            "result": {
+              "status": "passed",
+              "duration": 32700000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User Clicks on MyProfile icon",
+            "result": {
+              "status": "passed",
+              "duration": 54828000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "My Profile page should be displayed correctly",
+            "result": {
+              "status": "passed",
+              "duration": 10794000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Username"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "testuserw59"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Username should be displayed correctly under profile gravator in MyProfileTab",
+            "result": {
+              "status": "passed",
+              "duration": 1443000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User should have logout button enabled for MyProfileTab",
+            "result": {
+              "status": "passed",
+              "duration": 1091000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Sidebar menu should be displayed correctly for MyProfileTab",
+            "result": {
+              "status": "passed",
+              "duration": 1855000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validation-of-my-profile-features-of-wordpress;valiation-of-myprofile-tab-in-my-profile-page",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Valiation of MyProfile Tab in My Profile Page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User login to the application in 'prod' env",
+            "result": {
+              "status": "passed",
+              "duration": 42227000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "User Clicks on MyProfile icon",
+            "result": {
+              "status": "passed",
+              "duration": 8124000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "firstName",
+                      "lastName",
+                      "displayName",
+                      "AboutMe"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "test",
+                      "userw59",
+                      "testuserw59",
+                      "test"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "User data should be auto-populated correctly in card profile for MyProfileTab",
+            "result": {
+              "status": "passed",
+              "duration": 10208000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "All fields in card profile should be displayed correctly for MyProfileTab",
+            "result": {
+              "status": "passed",
+              "duration": 2560000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validation-of-my-profile-features-of-wordpress;verify-user-is-able-to-update-the-profile-details",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Verify User is able to update the profile details",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User login to the application in 'prod' env",
+            "result": {
+              "status": "passed",
+              "duration": 37711000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "User Clicks on MyProfile icon",
+            "result": {
+              "status": "passed",
+              "duration": 9112000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "firstName",
+                      "lastName",
+                      "displayName",
+                      "AboutMe"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "test#!$@%**^()userw59)#$*(&#",
+                      "test#!$@%**^()userw59)#$*(&#",
+                      "test#!$@%**^()userw59)#$*(&#",
+                      "test#!$@%**^()userw59)#$*(&#"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 24,
+            "name": "User updates profile details",
+            "result": {
+              "status": "passed",
+              "duration": 37735000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "User saves the details",
+            "result": {
+              "status": "passed",
+              "duration": 2330000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "Verify success message is displayed correctly",
+            "result": {
+              "status": "passed",
+              "duration": 3390000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validation-of-my-profile-features-of-wordpress;verify-user-is-able-to-hide-gravatar-profile",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Verify User is able to Hide Gravatar Profile",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User login to the application in 'prod' env",
+            "result": {
+              "status": "passed",
+              "duration": 36717000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "User Clicks on MyProfile icon",
+            "result": {
+              "status": "passed",
+              "duration": 37767000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "Clicks on Toogle button to Hide or UnHide my gravator",
+            "result": {
+              "status": "passed",
+              "duration": 6849000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "User saves the details",
+            "result": {
+              "status": "passed",
+              "duration": 1578000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "Verify success message is displayed correctly",
+            "result": {
+              "status": "passed",
+              "duration": 1860000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validation-of-my-profile-features-of-wordpress;verify-no-sites-are-displayed-when-user-doesn't-have-any-profile-links",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "Verify No sites are displayed when User doesn't have any profile links",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User login to the application in 'prod' env",
+            "result": {
+              "status": "passed",
+              "duration": 32981000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "User Clicks on MyProfile icon",
+            "result": {
+              "status": "passed",
+              "duration": 7550000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "No sites should be displayed under Profile Links",
+            "result": {
+              "status": "passed",
+              "duration": 11087000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validation-of-my-profile-features-of-wordpress;verify-user-is-able-and-delete-added-profile-links-in-myprofile",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "Verify user is able and delete added profile links in Myprofile",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User login to the application in 'prod' env",
+            "result": {
+              "status": "passed",
+              "duration": 35234000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "User Clicks on MyProfile icon",
+            "result": {
+              "status": "passed",
+              "duration": 7386000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "User adds \"WordPress Site\" in Profile Links",
+            "result": {
+              "status": "passed",
+              "duration": 18203000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "Site should be added successfully",
+            "result": {
+              "status": "passed",
+              "duration": 1958000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 45,
+            "name": "User deletes the added site",
+            "result": {
+              "status": "passed",
+              "duration": 2437000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "Site should be deleted successfully",
+            "result": {
+              "status": "passed",
+              "duration": 2426000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
